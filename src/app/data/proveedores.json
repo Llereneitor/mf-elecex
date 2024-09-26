@@ -1,0 +1,15 @@
+{
+  "proveedores": [
+
+    {
+      "proveedorId": 1,
+      "formaPago": 180,
+      "nombre": "Llere"
+    },
+    {
+      "proveedorId": 2,
+      "formaPago": 90,
+      "nombre": "Noelia"
+    }
+  ]
+}

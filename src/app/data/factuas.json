@@ -1,0 +1,24 @@
+{
+  "facturas": [
+
+    {
+      "commercialInvoiceId": 11,
+      "proveedorName": "Llere",
+      "initialDate": "12/01/2024",
+      "expirationDate": "12/01/2024",
+      "timeBetweenPayments": 90,
+      "totalPayments": 3,
+      "totalAmount": 1000
+    },
+    {
+      "commercialInvoiceId": 12,
+      "proveedorName": "Noe",
+      "initialDate": "12/01/2024",
+      "expirationDate": "12/01/2024",
+      "timeBetweenPayments": 30,
+      "totalPayments": 5,
+      "totalAmount": 100
+    }
+  ]
+}
+
