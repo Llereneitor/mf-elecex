@@ -1,3 +1,18 @@
 .main-container {
   padding-top: 50px;
 }
+
+.tittle-class {
+  text-align: center;
+}
+.chart-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente, si es necesario */
+  height: 400px; /* Altura opcional para centrar verticalmente */
+}
+
+canvas {
+  max-width: 600px; /* Ajusta el ancho máximo */
+  width: 100%; /* Asegura que el canvas use el 100% del contenedor */
+}

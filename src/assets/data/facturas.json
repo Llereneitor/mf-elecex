@@ -1,0 +1,58 @@
+{
+  "facturas": [
+    {
+      "commercialInvoiceId": 11,
+      "proveedorName": "Llere",
+      "initialDate": "12/01/2024",
+      "expirationDate": "12/01/2024",
+      "timeBetweenPayments": 90,
+      "totalPayments": 3,
+      "totalAmount": 10
+    },
+    {
+      "commercialInvoiceId": 12,
+      "proveedorName": "Noe",
+      "initialDate": "12/01/2024",
+      "expirationDate": "12/04/2024",
+      "timeBetweenPayments": 30,
+      "totalPayments": 5,
+      "totalAmount": 11.42
+    },
+    {
+      "commercialInvoiceId": 12,
+      "proveedorName": "Emilio",
+      "initialDate": "12/01/2024",
+      "expirationDate": "12/02/2024",
+      "timeBetweenPayments": 30,
+      "totalPayments": 5,
+      "totalAmount": 22
+    },
+    {
+      "commercialInvoiceId": 12,
+      "proveedorName": "Laia",
+      "initialDate": "12/01/2024",
+      "expirationDate": "17/01/2024",
+      "timeBetweenPayments": 30,
+      "totalPayments": 5,
+      "totalAmount": 322
+    },
+    {
+      "commercialInvoiceId": 12,
+      "proveedorName": "Pedro",
+      "initialDate": "12/01/2024",
+      "expirationDate": "9/01/2024",
+      "timeBetweenPayments": 30,
+      "totalPayments": 5,
+      "totalAmount": 50
+    },
+    {
+      "commercialInvoiceId": 12,
+      "proveedorName": "pepe",
+      "initialDate": "12/01/2024",
+      "expirationDate": "15/01/2024",
+      "timeBetweenPayments": 30,
+      "totalPayments": 5,
+      "totalAmount": 100
+    }
+  ]
+}
