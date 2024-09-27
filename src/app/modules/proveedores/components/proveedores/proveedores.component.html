@@ -1,8 +1,30 @@
 <div class="main-container">
+
+  <div class="d-flex align-items-center">
+  <button class="btn btn-success me-2" (click)="irAAlta()">
+    ALTA
+  </button>
+
+  <div class="dropdown" [class.show]="isDropdownOpen">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" (click)="toggleDropdown()" aria-haspopup="true" aria-expanded="isDropdownOpen">
+      {{ selectedProvider || 'Selecciona un proveedor' }}
+    </button>
+
+    <div class="dropdown-menu" [class.show]="isDropdownOpen" aria-labelledby="dropdownMenuButton">
+      <input type="text" class="form-control" placeholder="Buscar proveedor..." [(ngModel)]="searchTerm" (input)="filterProveedores()" />
+
+      <ul class="list-group">
+        <li *ngFor="let proveedor of filteredProveedores">
+          <a class="dropdown-item" (click)="irAProveedor(proveedor.id)">{{ proveedor.nombre }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
   <div class="container mt-5">
-    <h4 class="tittle-class">Proveedores</h4>
+    <h4 class="tittle-class">PROVEEDORES</h4>
     <div class="chart-container">
-      <canvas id="myChart" width="400" height="300"></canvas>
+      <canvas id="myChart"></canvas>
     </div>
   </div>
 </div>

@@ -11,8 +11,17 @@
   align-items: center; /* Centra verticalmente, si es necesario */
   height: 400px; /* Altura opcional para centrar verticalmente */
 }
-
 canvas {
-  max-width: 600px; /* Ajusta el ancho máximo */
   width: 100%; /* Asegura que el canvas use el 100% del contenedor */
+}
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-success:hover {
+  background-color: #218838;
+}
+.dropdown-menu {
+  max-height: 300px; /* Limitar la altura del menú */
+  overflow-y: auto; /* Habilitar el desplazamiento */
 }
