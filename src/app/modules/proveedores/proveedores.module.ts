@@ -6,6 +6,7 @@ import { ProveedoresComponent } from './components/proveedores/proveedores.compo
 import { CrearProveedorComponent } from './components/crear-proveedor/crear-proveedor.component';
 import { CobroProveedorComponent } from './components/cobro-proveedor/cobro-proveedor.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ProveedoresRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ProveedoresModule { }

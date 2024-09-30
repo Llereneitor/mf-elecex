@@ -5,10 +5,3 @@
   min-height: 100vh;
 }
 
-.user-wrapper {
-  float: right;
-  background: rgb(231, 231, 231);
-  height: 30px;
-  margin-right: 5px;
-  width: 120px;
-}

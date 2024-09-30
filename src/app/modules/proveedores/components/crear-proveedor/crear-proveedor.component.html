@@ -1,1 +1,32 @@
-<p>crear-proveedor works!</p>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Crear Proveedor</h2>
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()" novalidate>
+      <div class="mb-3">
+        <label for="nombreProveedor">Nombre Proveedor</label>
+        <input id="nombreProveedor" type="text" class="form-control" formControlName="nombreProveedor" [ngClass]="{'is-invalid': submitted && f['nombreProveedor'].errors}" />
+        <div *ngIf="submitted && f['nombreProveedor'].errors" class="invalid-feedback">
+          <div *ngIf="f['nombreProveedor'].errors['required']">El nombre del proveedor es requerido</div>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="direccion">Dirección</label>
+        <input id="direccion" type="text" class="form-control" formControlName="direccion" />
+      </div>
+  
+      <div class="mb-3">
+        <label for="formaPago">Forma de Pago</label>
+        <select id="formaPago" class="form-control" formControlName="formaPago" [ngClass]="{'is-invalid': submitted && f['formaPago'].errors}">
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="Efectivo">Efectivo</option>
+          <option value="Tarjeta">Tarjeta</option>
+          <option value="Transferencia">Transferencia</option>
+        </select>
+        <div *ngIf="submitted && f['formaPago'].errors" class="invalid-feedback">
+          <div *ngIf="f['formaPago'].errors['required']">La forma de pago es requerida</div>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary bg-color-botton">Enviar</button>
+    </form>
+  </div>
