@@ -76,3 +76,10 @@ select.form-control {
 .form-control.is-invalid:focus {
   box-shadow: 0 0 5px rgba(220, 53, 69, 0.25);
 }
+
+.btn-padding{
+  padding-top: 70px;
+  width: 30%;
+  align-items: rigth;
+  display: inline;
+}

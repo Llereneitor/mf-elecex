@@ -1,5 +1,10 @@
 <div class="container mt-5">
+
+  <button type="button" class="btn btn-primary btn-sm rounded-pill shadow position-relative top-0 end-0 m-3 btn-padding">
+    Volver
+  </button>
     <h2 class="text-center mb-4">Crear Proveedor</h2>
+    
     <form [formGroup]="formulario" (ngSubmit)="onSubmit()" novalidate>
       <div class="mb-3">
         <label for="nombreProveedor">Nombre Proveedor</label>
@@ -27,6 +32,10 @@
         </div>
       </div>
   
-      <button type="submit" class="btn btn-primary bg-color-botton">Enviar</button>
+      <button onclick="goBack()" type="submit" class="btn btn-primary bg-color-botton">Enviar</button>
     </form>
+
+
+
+    
   </div>

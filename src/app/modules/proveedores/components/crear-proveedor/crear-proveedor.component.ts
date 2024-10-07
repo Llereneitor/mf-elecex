@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crear-proveedor',
@@ -11,7 +12,7 @@ export class CrearProveedorComponent implements OnInit{
   formulario!: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
     this.formulario = this.formBuilder.group({
@@ -33,5 +34,9 @@ export class CrearProveedorComponent implements OnInit{
     }
 
     console.log('Formulario Enviado', this.formulario.value);
+  }
+
+  goBack () {
+
   }
 }
